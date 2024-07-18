@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Venta de SOAT</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+    <form id="formulario-soat" class="formulario">
+        <h2>Formulario de Venta de SOAT</h2>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+        <select id="tipo_documento" name="tipo_documento" required>
+            <option value="">Tipo de documento</option>
+            <option value="DNI/CEDULA">DNI/Cédula</option>
+            <option value="RUC">RUC</option>
+            <option value="CEX">Carnet de Extranjería</option>
+            <option value="Pasaporte">Pasaporte</option>
+        </select>
+        <input type="text" id="documento" name="documento" placeholder="Número de documento" required>
+        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+        <input type="text" id="marca" name="marca" placeholder="Marca del vehículo" required>
+        <input type="text" id="modelo" name="modelo" placeholder="Modelo del vehículo" required>
+        <input type="text" id="placa" name="placa" placeholder="Número de placa" required>
+        <input type="text" id="inicio_vigencia" name="inicio_vigencia" placeholder="Inicio de vigencia" class="datepicker" required>
+        <input type="text" id="fin_vigencia" name="fin_vigencia" placeholder="Fin de vigencia" class="datepicker" required>
+        <input type="text" id="duracion" name="duracion" placeholder="Duración del seguro (ej. 1 año)" required>
+        <button type="submit">Comprar SOAT</button>
+    </form>    
+    
+    <!-- Archivo JavaScript separado -->
+    <script src="formulario.js"></script>
+</body>
+</html>
+
